@@ -1,0 +1,38 @@
+header
+  top: 0
+  z-index: $header-z
+  width: 100%
+  user-select: none
+  position: fixed
+  .header-top
+    @extend %centered
+    height: $header-height
+    .logo
+      float: left
+      display: block
+      +hidpi-image("logo.png")
+      margin-top: 12px 
+      margin-right: 17px
+  .nav-content
+    background: $black  
+    height: $nav-height
+    nav
+      @extend %centered
+      .menu-link
+        +font($font-size-menu,$white)
+        width: auto
+        line-height: ($nav-height - 2)
+        padding: 0 10px
+        display: inline-block
+        text-decoration: none
+        transition: all 200ms
+        border-bottom: 2px solid $black
+        &:hover
+          border-color: darken($white,30%)
+          color: #ffffff
+          transition: none
+        &:active
+          border-color: $green
+        &.is-active
+          border-color: $green
+          pointer-events: none         
