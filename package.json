@@ -41,6 +41,6 @@
   "scripts": {
      "start": "brunch watch --server",
      "install": "./node_modules/bower/bin/bower install",
-     "postinstall": "brunch build -P"
+     "postinstall": "brunch build -c config-release.coffee -P"
   }
 }
