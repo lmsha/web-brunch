@@ -4,15 +4,31 @@ header
   width: 100%
   user-select: none
   position: fixed
+  background: $white
   .header-top
     @extend %centered
     height: $header-height
     .logo
       float: left
-      display: block
-      +hidpi-image("logo.png")
-      margin-top: 12px 
-      margin-right: 17px
+      +hidpi-image("../images/lmsh.jpg", 160px, 160px)
+      margin-top: 10px 
+      margin-right: 20px
+    .description
+      padding-top: 16px
+      +font($font-size-small,$black)
+      .name
+        +font($font-size-head,$black)
+    .contacts
+      margin-left: 180px
+      line-height: 24px
+      .mail
+        font-size: $font-size-small
+        .fa
+          margin-right: 10px
+          font-size: $font-size-big
+      .phone
+        font-size: $font-size-small
+        padding-left: 30px
   .nav-content
     background: $black  
     height: $nav-height
@@ -22,7 +38,7 @@ header
         +font($font-size-menu,$white)
         width: auto
         line-height: ($nav-height - 2)
-        padding: 0 10px
+        padding: 0 20px
         display: inline-block
         text-decoration: none
         transition: all 200ms

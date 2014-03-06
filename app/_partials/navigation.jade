@@ -5,4 +5,4 @@
         a.menu-link(href=item.path)= item.title
       else
         - active = (filename == item.path + '.jade') || (filename == 'index.jade' && !item.path)
-        a.menu-link(href='/'+item.path+(item.path?'.html':''), class=active?'active':null)= item.title
+        a.menu-link(href='/'+item.path+(item.path?'.html':''), class=active?'is-active':null)= item.title
