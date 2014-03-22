@@ -1,8 +1,10 @@
-include _partials/dochead
-body
-  include _partials/header
-  
-  .main
-    include _partials/main_page_slider
+extend _partials/layout
 
-  include _partials/footer
+block title
+  title АЛЬТЕРНАТИВА: летняя многопрофильная школа (Тула) - ЛМШ, летняя школа, детский образовательный лагерь, внешкольное образование
+
+block description
+  meta(name="description", content="Летняя Школа АЛЬТЕРНАТИВА, проводится на базе детского оздоровительного лагеря каждый год!")
+
+block content
+  include _partials/pages/main

@@ -33,12 +33,14 @@ exports.config =
       options:
         pretty: yes
       locals:
+        site:
+          baseurl: "/"
         nav: [
-          {title: 'О НАС', path: 'info'},
-          {title: 'СМЕНА', path: 'session'},
-          {title: 'КОМАНДА', path: 'team'},
+          {title: 'О НАС', path: 'about'},
+          {title: 'СМЕНА', path: 'smeny'},
+          {title: 'КОМАНДА', path: 'science/teachers'},
           {title: 'МЕДИА', path: 'media'},
-          {title: 'РОДИТЕЛЯМ', path: 'parental'},
+          {title: 'РОДИТЕЛЯМ', path: 'parents'},
           {title: 'КОНТАКТЫ', path: 'contacts'}
         ]
         social:[

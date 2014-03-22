@@ -1,0 +1,33 @@
+root: '/app'
+
+map:
+  about:
+    - history
+    - faq
+    - friends
+    - newbies
+  smeny:
+    - smena-2013
+    - smena-2012
+    - smena-2011
+    - smena-2010
+    - smena-2009
+    - smena-2008
+    - smena-2007
+  science:
+    teachers:
+      - dementev-vladimir
+      - vanya-lakoncev
+      - sasha-maksimov
+    courses:
+      - maths
+      - physics
+      - chemistry
+      - biology
+      - it
+      - humanities
+      - creativity
+  media: ""
+  parents: ""
+  contacts: ""
+

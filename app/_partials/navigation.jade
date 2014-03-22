@@ -1,8 +1,4 @@
 .nav-content
   nav
     each item in nav
-      if item.path.indexOf('http') == 0
-        a.menu-link(href=item.path)= item.title
-      else
-        - active = (filename == item.path + '.jade') || (filename == 'index.jade' && !item.path)
-        a.menu-link(href='/'+item.path+(item.path?'.html':''), class=active?'is-active':null)= item.title
+      a.menu-link(href='/'+item.path)= item.title
