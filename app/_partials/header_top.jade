@@ -6,10 +6,13 @@
     p летняя
     p многопрофильная
     p школа
-  .contacts.inline
-    p.mail
+  .contacts.inline(itemscope, itemtype="http://schema.org/PostalAddress")
+    p.mail(itemprop="email")
       i.fa.fa-envelope
-      | info@summer-school.ru
-    p.phone
-      | 8 (495) 300-33-33
-  .social
+      = site.email
+    p.phone(itemprop="telephone")
+      i.fa.fa-phone
+      = site.phone
+  .social.inline
+    each soc in social
+      a.social-link(href="#{soc.url}",class="fa fa-#{soc.type}", target="_blank")   

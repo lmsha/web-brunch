@@ -13,6 +13,8 @@ body
 
 a
   color: $blue-link
+  &:hover
+    text-decoration: none
 
 .fixed
   position: fixed !important
@@ -38,8 +40,7 @@ a
   position: relative
 
 .main
-  margin-top: ($header-height + $nav-height)
-
+  margin-top: 0 
 
 @media only screen and (max-width: $main-width)
   .main

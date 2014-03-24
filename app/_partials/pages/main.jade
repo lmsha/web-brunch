@@ -3,5 +3,60 @@
     .slider
       .item
         .title  Летняя школа &laquo;Альтернатива&raquo;
-        | Это летняя многопрофильная школа (ЛМШ), которая проводится на базе детского оздоровительного лагеря в Тульской области каждое лето уже почти 30 лет
+        br
+        | Место, где три недели летних каникул становятся самым важным и запоминающимся событием. 
+        br
+        br
+        | Мы не знаем, что вы делали прошлым летом, но мы знаем, как вы можете провести следующее!
+        br
+        br
+        a.link(href="/smeny") Приглашаем
+        |&nbsp;школьников 7&mdash;10 классов!
         .player.pi(data-component="video_player", data-option-file="http://lavideo2014.s3.amazonaws.com/smena360.mp4", data-option-hd-file="http://lavideo2014.s3.amazonaws.com/smena720.mp4", data-option-image="/images/video_preview.png", data-pi="player")
+.section.green
+  .content
+    .title АЛЬТЕРНАТИВА &mdash; ЭТО
+    .column-3
+      .icon.large
+        i.fa.fa-bookmark
+      .desc
+        |Возможность расширить кругозор и получить новые знания (или подтянуть имеющиеся) за пределами школьной программы, прослушать уникальные авторские  
+        a.link(href="/science/courses")курсы
+        |&nbsp;и 
+        a.link(href="/science/lectures")лекции
+    .column-3
+      .icon.large
+        i.fa.fa-music
+      .desc
+        | Творческие курсы и кружки: танцы, обучение игре на гитаре и других инструментах, съемка настоящего фильма, изучение культуры народов мира и многое-многое другое
+    .column-3
+      .icon.large
+        i.fa.fa-cloud
+      .desc
+        | Увлекательный мир, в котором помимо интересных учебных курсов, школьников ожидают творческие и ролевые игры, театрализованные вечера, костры, спорт и многое другое
+    .clearfix
+
+mixin news(picture,date,month,title,desc,link)
+  a(href="#{link ? link : '#'}")
+    .picture
+      img.picture-img(src="#{picture}")
+      .datetime
+        .date 
+          =date
+        month
+          =month
+  .desc
+    .heading 
+      !=title 
+    !=desc
+
+.section.white
+  .content.news
+    .title НАШИ НОВОСТИ
+    .column-3
+      +news("http://cs1704.vk.me/u227567/91914316/x_d8f8c103.jpg","22","мар", "Даты собеседований 2014","Собеседования состоятся в апреле и мае в Москве, Туле и Ефремове")
+    .column-3
+      +news("http://cs1705.vk.me/u53526/95968629/x_c7377e55.jpg","22","мар", "Многопрофильная олимпиада", "Первая многопрофильная олимпиада состоится в Туле 30 марта. Прояви себя - получи призы!")
+    .column-3
+      +news("http://cs1705.vk.me/u53526/95968629/x_c7377e55.jpg","22","мар", "Многопрофильная олимпиада", "Первая многопрофильная олимпиада состоится в Туле 30 марта. Прояви себя - получи призы!")
+    .clearfix
